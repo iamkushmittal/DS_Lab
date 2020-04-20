@@ -18,11 +18,13 @@ public class Occurences {
         int count = 0;
         for (i = 0; i < size; i++) {
             if (A[i] == n) {
+                System.out.println(n + " Occurred at index : " + i);
                 count++;
             }
         }
-        System.out.println("No. of occurences of " + n + " is : " + count);
-
+        if (count == 0) {
+            System.out.println("This number does not belong to Array .");
+        }
     }
 }
 
